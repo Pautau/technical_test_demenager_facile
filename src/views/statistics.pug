@@ -1,0 +1,23 @@
+doctype html
+html
+	head 
+		include includes/head.pug 
+	body 
+		include includes/nav.pug
+	
+	h3.text-center= "Statistics of users' age"
+	table.table.table-striped
+		thead
+			tr
+				th Lowest 
+				th Highest 
+				th Total
+				th Average 
+		tbody
+			tr
+				td
+					a(href!=lowestAge)= lowestAge + " years" 
+				td
+					a(href!=highestAge)= highestAge + " years" 
+				td= totalAge + " years"
+				td= averageAge + " years"

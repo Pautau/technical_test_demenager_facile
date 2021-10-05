@@ -1,0 +1,22 @@
+nav.navbar.navbar-expand-lg.navbar.bg-white.shadow-sm.border-bottom.mb-5
+	.container
+		a.navbar-brand.text-dark(href='/') Users Informations 
+		button.navbar-toggler(type='button' data-toggle='collapse' data-target='#topNavbar' aria-controls='topNavbar' aria-expanded='false' aria-label='Toggle navigation')
+			span.navbar-toggler-icon
+		#topNavbar.collapse.navbar-collapse
+			ul.navbar-nav.mr-auto
+				li.nav-item
+					if title == "Home"
+						a.nav-link.text-blue(href='/') Home
+					else
+						a.nav-link.text-dark(href='/') Home
+				li.nav-item
+					if title == "Age"
+						a.nav-link.text-blue(href='/age') Age
+					else
+						a.nav-link.text-dark(href='/age') Age
+				li.nav-item
+					if title == "Statistics"
+						a.nav-link.text-blue(href='/statistics') Statistics
+					else
+						a.nav-link.text-dark(href='/statistics') Statistics

@@ -1,0 +1,20 @@
+doctype html
+html
+	head 
+		include includes/head.pug 
+	body 
+		include includes/nav.pug
+	h3.text-center= "Entries: " + users.length
+	table.table.table-striped.table-sm
+		thead
+			tr
+				th First Name 
+				th Last Name 
+				th Age 
+		tbody
+			each user in users 
+				tr
+					td= user.first_name
+					td= user.last_name
+					td
+						a(href!=user.age)= user.age + " years"
