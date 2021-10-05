@@ -9,24 +9,24 @@ Ceci me servira aussi pour plus tard si je rencontre les mêmes problèmes afin 
 
 ## Technologies
 
-**TypeScript :**
-- [Expérience] Notions
-- [Notions] Fortement typé, POO, compilé
+- **TypeScript :**
+    - **Expérience :** Notions
+    - **Notions :** Fortement typé, POO, compilé
 
 **ExpressJS :**
-- [Expérience] Aucune
-- [Documentation utilisée](https://expressjs.com/fr/starter/basic-routing.html)
+    - **Expérience :** Aucune
+    - **Documentation utilisée :** [Documentation d'ExpressJS](https://expressjs.com/fr/starter/basic-routing.html)
 
 **NodeJS :**
-- [Expérience] Aucune
+    - **Expérience :** Aucune
 
 **Jest :**
-- [Expérience] Aucune
-- [Cours suivi](https://youtu.be/8l-5pjZAxEY)
+    - **Expérience :** Aucune
+    - **Cours suivi :** [YouTube](https://youtu.be/8l-5pjZAxEY)
 
 **Pug :**
-- [Expérience] Aucune
-- [Documentation utilisée](https://pugjs.org/api/getting-started.html)
+    - **Expérience :** Aucune
+    - **Documentation utilisée :** [Documentation de Pug](https://pugjs.org/api/getting-started.html)
 
 
 
@@ -38,9 +38,9 @@ Ceci me servira aussi pour plus tard si je rencontre les mêmes problèmes afin 
     - `'\statistics'` = Statistiques
 
 **Difficultés rencontées**
-- [Difficulté_1] La route `?age=` renvoie à l'accueil.
-    - [Solution] Changement du nom de la route en `:age`
-    - [Détails] Cela ne fonctionnait pas car le caractère `?` est utilisé comme masque, permettant de le remplacer par un autre caractère
+- **Difficulté_1** La route `?age=` renvoie à l'accueil.
+    - **Solutions** Changement du nom de la route en `:age`
+    - **Détails** Cela ne fonctionnait pas car le caractère `?` est utilisé comme masque, permettant de le remplacer par un autre caractère
 
 **Sources**
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes)
@@ -52,8 +52,8 @@ Ceci me servira aussi pour plus tard si je rencontre les mêmes problèmes afin 
 - Importation du fichier JSON `/src/users.json`
 
 **Difficultés rencontées**
-- [Difficulté_1] Problème d'accès fichier, je faisais `JSON.parse('./resources/users.json')`
-    - [Solution] `require('./resources/users.json')`
+- **Difficulté_1** Problème d'accès fichier, je faisais `JSON.parse('./resources/users.json')`
+    - **Solutions** `require('./resources/users.json')`
 
 **Sources**
 - [W3Schools](https://www.w3schools.com/js/js_json_parse.asp)
@@ -67,10 +67,10 @@ Ceci me servira aussi pour plus tard si je rencontre les mêmes problèmes afin 
 *Note (05/10/2021):* La boucle créant une chaine de caractère pour générer du code HTML sera supprimée afin de faire place à la librairie Pug. Beaucoup plus pratique, il faut juste passer en paramètre la variable et dire à Pug d'itérer sur l'élément pour qu'il affiche proprement (voir `home.pug` ou `statistics.pug`)
 
 **Difficultés rencontées**
-- [Difficulté_1] Problème d'affichage lorsque je typais la variable stockant le fichier JSON en `Object`, alors que ça fonctionne lorsque je ne type pas (vu que c'est un objet, il doit être typé)
-    - [Tentative_1] Transformer l'objet en tableau avec `Object.keys(json)`, n'a pas fonctionné et m'a renvoyé les indices du tableau car `json` est en fait un tableau d'objets. Si c'en était pas un, cela aurait fonctionné (tests effectués dans un objet)
-    - [Tentative_2] Création d'une interface `MyType` qui accueillera chaque valeur des propriétés préalablement typées. Puis création de la constante `json` typée `Array<MyType>`. 
-    - [Solution] Il fallait créer deux `Types`: un `Users` sous forme de tableau avec un autre Type personnalisé appelé `User`, ce dernier sera un objet avec ses propriétés typées
+- **Difficulté_1** Problème d'affichage lorsque je typais la variable stockant le fichier JSON en `Object`, alors que ça fonctionne lorsque je ne type pas (vu que c'est un objet, il doit être typé)
+    - **Tentative_1** Transformer l'objet en tableau avec `Object.keys(json)`, n'a pas fonctionné et m'a renvoyé les indices du tableau car `json` est en fait un tableau d'objets. Si c'en était pas un, cela aurait fonctionné (tests effectués dans un objet)
+    - **Tentative_2** Création d'une interface `MyType` qui accueillera chaque valeur des propriétés préalablement typées. Puis création de la constante `json` typée `Array<MyType>`. 
+    - **Solutions** Il fallait créer deux `Types`: un `Users` sous forme de tableau avec un autre Type personnalisé appelé `User`, ce dernier sera un objet avec ses propriétés typées
 
 **Sources**
 - [Flexiple](https://flexiple.com/loop-through-object-javascript/)
@@ -109,10 +109,10 @@ Ceci me servira aussi pour plus tard si je rencontre les mêmes problèmes afin 
     - `head.pug` qui affiche le titre de la page en fonction de la position de l'utilisateur sur le site et qui importe Bootstrap
 
 **Difficultés rencontées**
-- [Difficulté_1] Impossibilité de passer des variables à une page HTML depuis NodeJS
-    - [Tentative_1] Installation de EJS, difficulté à le faire fonctionner : la page charge à l'infini *désinstallation*
-    - [Tentative_2] Installation de Nunjucks, plusieurs tentatives pour régler l'erreur `template not found` alors que le chemin pointe bien vers le chemin des templates 
-    - [Solution] Installation de la librairie Pug.
+- **Difficulté_1** Impossibilité de passer des variables à une page HTML depuis NodeJS
+    - **Tentative_1** Installation de EJS, difficulté à le faire fonctionner : la page charge à l'infini *désinstallation*
+    - **Tentative_2** Installation de Nunjucks, plusieurs tentatives pour régler l'erreur `template not found` alors que le chemin pointe bien vers le chemin des templates 
+    - **Solutions** Installation de la librairie Pug.
 
 **Sources**
 - [Code for Geek](https://codeforgeek.com/render-html-file-expressjs/)
@@ -135,9 +135,9 @@ Ceci me servira aussi pour plus tard si je rencontre les mêmes problèmes afin 
     - `getAges`, `getTotalAge`, `findByAge` 
 
 **Difficultés rencontées**
-- [Difficulté_1] Difficulté à exporter mes fonctions de `app.ts` dans `beginner-test.test.ts`
-    - [Solution] Passage des fonctions dans le scope global au lieu de les stocker dans leur route respective
-    - [Détails] C'était un problème de scope, les fonctions ne voulaient pas s'exporter si elles étaient dans les routes.
+- **Difficulté_1** Difficulté à exporter mes fonctions de `app.ts` dans `beginner-test.test.ts`
+    - **Solutions** Passage des fonctions dans le scope global au lieu de les stocker dans leur route respective
+    - **Détails** C'était un problème de scope, les fonctions ne voulaient pas s'exporter si elles étaient dans les routes.
 
 **Sources**
 [codeconcept](https://youtu.be/8l-5pjZAxEY)
@@ -146,11 +146,5 @@ Ceci me servira aussi pour plus tard si je rencontre les mêmes problèmes afin 
 9. ## Exécution du Linter (05/10/2021)
 
 **Difficultés rencontées**
-- [Difficulté_1] Le linter renvoyait l'erreur suivante : `[error] No files matching the pattern were found: "'src/**/*.{js,jsx,ts,tsx,css,scss}'".`
-    - [Solution] Supprimer les simples quotes autour du pattern a réglé le problème.
-
-
-10. ## Rédaction de la documentation (05/10/2021)
-
-**Sources**
-- [ExtendsClass](https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique-de-votre-projet/)
+- **Difficulté_1** Le linter renvoyait l'erreur suivante : `[error] No files matching the pattern were found: "'src/**/*.{js,jsx,ts,tsx,css,scss}'".`
+    - **Solutions** Supprimer les simples quotes autour du pattern a réglé le problème.
