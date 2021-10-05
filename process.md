@@ -13,18 +13,18 @@ Ceci me servira aussi pour plus tard si je rencontre les mêmes problèmes afin 
     - **Expérience :** Notions
     - **Notions :** Fortement typé, POO, compilé
 
-**ExpressJS :**
+- **ExpressJS :**
     - **Expérience :** Aucune
     - **Documentation utilisée :** [Documentation d'ExpressJS](https://expressjs.com/fr/starter/basic-routing.html)
 
-**NodeJS :**
+- **NodeJS :**
     - **Expérience :** Aucune
 
-**Jest :**
+- **Jest :**
     - **Expérience :** Aucune
     - **Cours suivi :** [YouTube](https://youtu.be/8l-5pjZAxEY)
 
-**Pug :**
+- **Pug :**
     - **Expérience :** Aucune
     - **Documentation utilisée :** [Documentation de Pug](https://pugjs.org/api/getting-started.html)
 
