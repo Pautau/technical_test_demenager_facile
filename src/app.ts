@@ -21,7 +21,7 @@ type User = {
 const path = require("path");
 // Try to get the JSON, if it's empty or incorrect return an error. Prevents the application from crashing when the file is empty.
 try {
-  var json: Users = require("./resources/test.json");
+  var json: Users = require("./resources/users.json");
 } catch (error) {
   var json: Users = [
     {
